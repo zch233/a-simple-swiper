@@ -20,6 +20,7 @@
 }
 .images img.current {
   z-index: 1;
+  transform: translateX(0);
 }
 .images img.leave {
   z-index: 1;

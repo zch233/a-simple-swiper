@@ -8,9 +8,9 @@ Swiper.prototype = {
   init() {
     $('.images>img').eq(this.slideIndex(this.index)).addClass('current').siblings().addClass('enter')
     $('.images>img').css({ 'transition-duration': this.duration + 's' })
-    this.xxx()
+    this.main()
   },
-  xxx() {
+  main() {
     const delay = this.option.delay
     const slide = () => {
       $('.images>img').eq(this.slideIndex(this.index)).addClass('leave').one('transitionend', function() {
